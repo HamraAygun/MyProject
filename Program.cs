@@ -1,5 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
 
 using System;
 public class Program
@@ -32,16 +31,5 @@ public class Program
         Console.WriteLine("Dikdörtgenin Çevresi :" + d + "\n");
 
         Console.ReadKey();
-
-
-
-
-
-
-
     }
-
-
-
-
 }
