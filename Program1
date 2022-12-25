@@ -1,0 +1,34 @@
+// See https://aka.ms/new-console-template for more information
+
+using System;
+
+
+//Klavyeden girilen A ve B gibi iki sayıyı,  sadece toplama ve çıkarma işlemlerini kullanarak (direkt çarpma işlemi kullanmadan) çarpma işlemini yapan ve bunun sonucunu ekrana, ekranın geri plan rengi beyaz ve ekrana yazılan mesajın rengi kırmızı olacak şekilde yazan programı yazınız.
+
+
+Console.BackgroundColor = ConsoleColor.White;
+
+Console.ForegroundColor = ConsoleColor.Red;
+
+int a, b, carpimSonucu = 0;
+
+Console.WriteLine("1. sayıyı giriniz:" + "\n");
+
+a = int.Parse(Console.ReadLine());
+
+Console.WriteLine(" ");
+
+Console.WriteLine("2. sayıyı giriniz:" + "\n");
+
+b = int.Parse(Console.ReadLine());
+
+Console.WriteLine(" ");
+
+for (int i = 1; i <= b; i++)
+{
+    carpimSonucu = carpimSonucu + a;
+}
+
+Console.WriteLine("Çarpım Sonucu: " + carpimSonucu);
+
+Console.ReadKey();
