@@ -70,4 +70,77 @@
   
   
   
+  
+      
+        //1 - 100 arasındaki tüm asal sayıları ekrana yazdıran programı hazırlayınız..
+
+
+        int kontrol = 0;
+
+        int i, j;
+
+        for (i = 1; i <= 100; i++)
+        {
+            kontrol = 0;
+
+            for (j = 2; j <= i /2; j++)
+            {
+                if (i % j == 0)
+                {
+                    kontrol++;
+                    break;
+                }
+            }
+            if (kontrol == 0)
+            {
+                Console.Write(i + "\n");
+            }
+
+        }
+
+        Console.ReadKey();
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        ////Bir bankamatik müşterisine bankamatikten çekmek istediği para sorulacak. Çekeceği paraya göre kaç tane 200’lük, kaç tane 100’lük, kaç tane 50’lik, kaç tane 20’lik, kaç tane 10’luk ve kaç tane 5’lik verilmesi gerektiğini bulan programı yazın.
+
+        //int para;
+
+        //Console.WriteLine("Çekmek istediğiniz tutarı giriniz: ");
+
+        //para = int.Parse(Console.ReadLine());
+
+        //int d = para / 200;
+
+        //Console.WriteLine(d + " adet 200");
+
+        //int c = (para - (d * 200)) / 100;
+
+        //Console.WriteLine(c + " adet 100");
+
+        //int a = (para - ((d * 200) + (c * 100))) / 50;
+
+        //Console.WriteLine(a + " adet 50");
+
+        //int b = (para - ((d * 200) + (c * 100) + (a *50))) / 20;
+
+        //Console.WriteLine(b + " adet 20");
+
+        //int e = (para - ((d * 200) + (c * 100) + (a * 50) + (b * 20))) / 10;
+
+        //Console.WriteLine(e + " adet 10");
+
+        //int f = (para - ((d * 200) + (c * 100) + (a * 50) + (b * 20) + (e * 10))) / 5;
+
+        //Console.WriteLine(f + " adet 5");
+
+        //Console.ReadKey();
+  
+  
 
