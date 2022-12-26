@@ -1,0 +1,73 @@
+
+        //Bir ders için yapılan iki ara sınav ve bir genel sınav sonucu değerlendirilerek geçme notları hesaplanacaktır. Bu dersin geçme notu 1. ara sınav notunun %20’si, 2. ara sınav notunun %30’u ve genel sınav notunun %50’si toplanarak hesaplanmaktadır. Geçme notunu hesaplayan ve sonucu ekrana yazdıran programı yazın.
+
+        int a, b, c;
+
+        Console.WriteLine("İlk ara sınav notunuzu giriniz: " + "\n");
+
+        a = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(" ");
+
+        Console.WriteLine("ikinci ara sınav notunuzu giriniz: " + "\n");
+
+        b = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(" ");
+
+        Console.WriteLine("Genel sınav notunuzu giriniz: " + "\n");
+
+        c = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(" ");
+
+        int toplam = ((a * 20) / 100) + ((b * 30) / 100) + ((c * 50) / 100);
+
+        Console.WriteLine("Geçme notunuz: " + toplam);
+
+        Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+      //Klavyeden girilen A ve B gibi iki sayıyı,  sadece toplama ve çıkarma işlemlerini kullanarak (direkt çarpma işlemi kullanmadan) çarpma işlemini yapan ve bunun sonucunu ekrana, ekranın geri plan rengi beyaz ve ekrana yazılan mesajın rengi kırmızı olacak şekilde yazan programı yazınız.
+
+
+      Console.BackgroundColor = ConsoleColor.White;
+
+      Console.ForegroundColor = ConsoleColor.Red;
+
+      int a, b, carpimSonucu = 0;
+
+      Console.WriteLine("1. sayıyı giriniz:" + "\n");
+
+      a = int.Parse(Console.ReadLine());
+
+      Console.WriteLine(" ");
+
+      Console.WriteLine("2. sayıyı giriniz:" + "\n");
+
+      b = int.Parse(Console.ReadLine());
+
+      Console.WriteLine(" ");
+
+      for (int i = 1; i <= b; i++)
+      {
+         carpimSonucu = carpimSonucu + a;
+      }
+
+      Console.WriteLine("Çarpım Sonucu: " + carpimSonucu);
+    
+      Console.ReadKey();
+
+  
+  
+  
+  
+
