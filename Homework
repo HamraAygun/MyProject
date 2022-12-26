@@ -110,37 +110,74 @@
       
         ////Bir bankamatik müşterisine bankamatikten çekmek istediği para sorulacak. Çekeceği paraya göre kaç tane 200’lük, kaç tane 100’lük, kaç tane 50’lik, kaç tane 20’lik, kaç tane 10’luk ve kaç tane 5’lik verilmesi gerektiğini bulan programı yazın.
 
-        //int para;
+        int para;
 
-        //Console.WriteLine("Çekmek istediğiniz tutarı giriniz: ");
+        Console.WriteLine("Çekmek istediğiniz tutarı giriniz: ");
 
-        //para = int.Parse(Console.ReadLine());
+        para = int.Parse(Console.ReadLine());
 
-        //int d = para / 200;
+        int d = para / 200;
 
-        //Console.WriteLine(d + " adet 200");
+        Console.WriteLine(d + " adet 200");
 
-        //int c = (para - (d * 200)) / 100;
+        int c = (para - (d * 200)) / 100;
 
-        //Console.WriteLine(c + " adet 100");
+        Console.WriteLine(c + " adet 100");
 
-        //int a = (para - ((d * 200) + (c * 100))) / 50;
+        int a = (para - ((d * 200) + (c * 100))) / 50;
 
-        //Console.WriteLine(a + " adet 50");
+        Console.WriteLine(a + " adet 50");
 
-        //int b = (para - ((d * 200) + (c * 100) + (a *50))) / 20;
+        int b = (para - ((d * 200) + (c * 100) + (a *50))) / 20;
 
-        //Console.WriteLine(b + " adet 20");
+        Console.WriteLine(b + " adet 20");
 
-        //int e = (para - ((d * 200) + (c * 100) + (a * 50) + (b * 20))) / 10;
+        int e = (para - ((d * 200) + (c * 100) + (a * 50) + (b * 20))) / 10;
 
-        //Console.WriteLine(e + " adet 10");
+        Console.WriteLine(e + " adet 10");
 
-        //int f = (para - ((d * 200) + (c * 100) + (a * 50) + (b * 20) + (e * 10))) / 5;
+        int f = (para - ((d * 200) + (c * 100) + (a * 50) + (b * 20) + (e * 10))) / 5;
 
-        //Console.WriteLine(f + " adet 5");
+        Console.WriteLine(f + " adet 5");
 
-        //Console.ReadKey();
+        Console.ReadKey();
+        
+        
+        
+        
+        
+        
+         // Girilen 6 basamaklı sayının rakamlarının toplamını yazan programı giriniz.
+
+        int ob = 0;
+        int yb = 0;
+        int b = 0;
+        int y = 0;
+        int o=0;
+        int bi = 0;
+
+        Console.WriteLine("6 basamaklı bir sayı giriniz: ");
+
+        int a = int.Parse(Console.ReadLine());
+
+        if (a >= 100000 && a <= 999999)
+        {
+            yb = a / 100000;
+            ob = (a / 10000)%10;
+            b = (a / 1000)%10;
+            y = (a / 100)%10;
+            o = (a / 10)%10;
+            bi = a % 10;
+
+            int sonuc;
+            sonuc = (yb + ob + b + y + o + bi);
+            Console.WriteLine("Rakamların toplamı :" + sonuc);
+        }
+
+        else
+        {
+            Console.WriteLine("Lütfen 6 haneli bir sayı giriniz!");
+        }
   
   
 
